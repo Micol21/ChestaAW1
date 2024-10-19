@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Skin Elixir</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <!-- Navbar -->
+     <nav>
+     <div class="logo">
+        <img src="assets/img/logo.png" alt="Logo de Skin Elixir">
+        <span>Skin Elixir</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categorias/limpieza.html">Limpieza</a></li>
+        <li><a href="categorias/serums.html">Serums</a></li>
+        <li><a href="categorias/hidratacion.html">Hidratación</a></li>
+        <li><a href="categorias/proteccion-solar.html">Protección Solar</a></li>
+    </ul>
+</nav>
+
+<!-- Formulario de Login -->
+<main>
+    <h1>Iniciar Sesión</h1>
+    <form id="loginForm">
+        <div class="form-group"> <!-- etiquetas y entradas (inputs) queden visualmente alineados y bien separados.-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
