@@ -4,31 +4,38 @@
     <meta charset="UTF-8"> <!--tipo de letra-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKIN ELIXIR</title>
-    <link rel="stylesheet" href="styles.css"><!--donde se definirán las reglas de CSS para controlar la apariencia de los elementos en la página-->
+    <!--<link rel="stylesheet" href="styles.css">donde se definirán las reglas de CSS para controlar la apariencia de los elementos en la página-->
+    <link rel="stylesheet" href="SCSS/styleScss.scss">
 </head>
 <body>
-     <!-- Navbar -->
-    <nav>
-        <div class="logo">
-            <img src="assets/img/logo.png" alt="Logo de Skin Elixir">
-            <span>Skin Elixir</span>
-        </div>
+    <div id="container">
+    <header>
         
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="categorias/limpieza.html">Limpieza</a></li>
-            <li><a href="categorias/serums.html">Serums</a></li>
-            <li><a href="categorias/hidratacion.html">Hidratación</a></li>
-            <li><a href="categorias/proteccion-solar.html">Protección Solar</a></li>
-            <li><a href="#" id="logout">Logout</a></li>
+        <div class="logo">
+            <img src="Formulario Basico/assets/img/logoviolet.png" alt="Logo de Skin Elixir">
+            
+        </div>
+        <!--<h1>Bienvenidos a Skin Elixir</h1>
+        <p>Descubre nuestros productos para el cuidado de la piel.</p>-->
+
+    </header>
+<!-- Navbar -->
+    <nav>
+         <ul class="nav-links">
+            <li><a href="login.html">Ingreso</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="buscarunproducto.html">Buscar un producto</a></li>
+            <li><a href="afecciones.html">Afecciones de la piel</a></li>
+           
         </ul>
     </nav>
-    
-    <main>
-        <h1>Bienvenidos a Skin Elixir</h1>
-        <p>Descubre nuestros productos para el cuidado de la piel.</p>
 
-        <section class="categories">
+
+</div>
+
+     <main>
+
+         <section class="categories">
             <div class="category-card">
                 <h2><a href="categorias/limpieza.html">Limpieza</a></h2>
             </div>
@@ -43,6 +50,18 @@
             </div>
         </section>
     </main>
+
+    <aside>
+        <h2>Buscador</h2>
+        <form >
+            <input type="text">
+            <input type="submit" value="Buscar">
+        </form>
+    </aside>
+
+    <footer>
+Chesta Micol Web &copy;2024
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>

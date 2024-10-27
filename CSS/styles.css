@@ -1,0 +1,156 @@
+
+.logo{
+   width: 100%;
+}
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: var(--text-color);
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+
+/* Navbar */
+nav {
+    background-color: rgba(113, 200, 249, 0.8); /* Transparencia */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    position: sticky; /* Hace que el navbar se quede arriba al hacer scroll */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--highlight-color);
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 0;
+    background: linear-gradient(120deg, var(--primary-color), var(--accent-color));
+    color: var(--secondary-color);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+/* Cards de categorías */
+.category-card {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px); /* Efecto de "flotar" al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.category-card h2 a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.category-card h2 a:hover {
+    color: var(--highlight-color);
+}
+
+
+/* Formularios */
+form {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"], form input[type="password"], form input[type="email"], form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: var(--highlight-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: var(--highlight-color); /* Cambia el color al hacer hover */
+}
+
+/* Logout*/
+#logout {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#logout:hover {
+    background-color: var(--highlight-color);
+}
+
+/*Logo*/
+.logo img {
+    width: 250px; /* Tamaño más pequeño */
+    height: auto; /* Mantiene la proporción original */
+    margin-right: 10px;
+    vertical-align: middle; /* Centra verticalmente respecto al texto */
+}
+
+
+
+
