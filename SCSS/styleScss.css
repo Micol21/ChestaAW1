@@ -1,6 +1,270 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.nav-links li a {
+  color: #fbeaff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  position: relative;
+}
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+  height: 4px;
+  width: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.registro-btn:hover {
+  transform: scale(1.2);
+}
+
+.registro-btn {
+  background-color: #ffffff;
+  color: #452c6e;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+/*Mixins*/
+.btn-add {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 0px;
+  cursor: pointer;
+  background-color: #452c6e;
+}
+.btn-addhover {
+  background-color: #3c0695;
+  transition: all ease-in-out 0.3;
+}
+
+.btn-quit {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 0px;
+  cursor: pointer;
+  background-color: #452c6e;
+}
+.btn-quithover {
+  background-color: #3a009a;
+  transition: all ease-in-out 0.3;
+}
+
+.category-card {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category-card:hover {
+  transform: translateY(-5px); /* Efecto de "flotar" al pasar el mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.category-card h2 a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.category-card h2 a:hover {
+  color: var(--highlight-color);
+}
+
+.container-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 5rem;
+  grid-auto-flow: column wrap;
+  margin: 3rem;
+}
+
+.product-card {
+  max-width: 380px;
+  padding: 2rem;
+  background-color: #ccc;
+  border-radius: 20px;
+  box-shadow: 20px 26px 72px 9px rgba(101, 73, 73, 0.79);
+  -webkit-box-shadow: 20px 26px 72px 9px rgba(101, 73, 73, 0.79);
+  -moz-box-shadow: 20px 26px 72px 9px rgba(101, 73, 73, 0.79);
+}
+.product-card img {
+  width: 100%;
+}
+.product-card .descrpción {
+  margin-top: 2rem;
+  font-size: smaller;
+}
+.product-card .card-footer {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2e8e1;
+}
+.login-page .logo {
+  margin-right: 20px;
+}
+.login-page .logo img {
+  max-width: 150px;
+  height: auto;
+}
+.login-page #loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+.login-page #loginForm h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.login-page #loginForm .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.login-page #loginForm .form-group label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+.login-page #loginForm .form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.login-page #loginForm button {
+  padding: 10px;
+  background-color: #4b2a72;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.login-page #loginForm button:hover {
+  background-color: #633c8f;
+}
+@media (max-width: 768px) {
+  .login-page .login-page {
+    padding: 20px;
+  }
+  .login-page .login-page form, .login-page .login-page #loginForm {
+    padding: 20px;
+  }
+}
+
+.registro-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f2e8e1;
+  min-height: 100vh;
+}
+.registro-page .logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.registro-page .logo img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.registro-page h1 {
+  font-size: 2rem;
+  color: #4b2a72;
+  margin-bottom: 20px;
+}
+.registro-page form {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.registro-page form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.registro-page form .form-group label {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: var(--font-family);
-  color: var(--text-color);
+  font-family: "Montserrat", serif;
+  font-size: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body {
+  background-color: #d5cabd;
+}
+
+header {
+  background-color: #452c6e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 10px 5%;
 }/*# sourceMappingURL=styleScss.css.map */

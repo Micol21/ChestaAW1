@@ -1,0 +1,39 @@
+.registro-btn:hover{
+    transform: scale(1.2);
+    
+}
+.registro-btn {
+    background-color: $color-blanco;
+    color: $color-nav;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+@function hoverColor($color,$percent){
+    @return saturate($color,$percent)
+}
+/*Mixins*/
+@mixin custonButtom($width,$height,$borderradius,$bg,$percent){
+    width:$width ;
+    height:$height ;
+    border-radius:$borderradius ;
+    border: 0px;
+    cursor: pointer;
+    background-color: $bg ;
+    &hover{
+        background-color:  hoverColor($bg,$percent);
+        transition: all ease-in-out 0.3;
+    }
+}
+
+.btn-add{
+    @include custonButtom(30px,30px,100%,$color-nav,50%);
+    
+}
+.btn-quit{
+    @include custonButtom(30px,30px,100%,$color-nav,70%);
+}

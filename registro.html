@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Skin Elixir</title>
-    <link rel="stylesheet" href="../styles.css"> <!-- Ruta para estilos -->
+    <link rel="stylesheet" href="SCSS/styleScss.css"> <!-- Ruta para estilos -->
 </head>
 <body>
      <!-- Navbar -->
-     <nav>
-        <div class="logo">
-            <img src="assets/img/logo.png" alt="Logo de Skin Elixir">
-            <span>Skin Elixir</span>
+      <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a  class="link" href="index.html">Inicio</a></li>
+                <li><a class="link"href="logout.html" >Logout</a></li>
+                <li><a class="link"href="login.html">Ingreso</a></li>
+                <li><a class="link"href="buscarunproducto.html">Buscar un producto</a></li>
+                <li><a class="link" href="afecciones.html">Afecciones de la piel</a></li>
+                <li><a class="link"href="Preguntas Frecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a class="link"href="SobreNosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+</header>
+
+
+    <main class="registro-page">
+        <div class="logo"></div>
+            <img src="Formulario Basico/assets/img/logoviolet.png" alt="Logo de Skin Elixir">
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="categorias/limpieza.html">Limpieza</a></li>
-            <li><a href="categorias/serums.html">Serums</a></li>
-            <li><a href="categorias/hidratacion.html">Hidratación</a></li>
-            <li><a href="categorias/proteccion-solar.html">Protección Solar</a></li>
-        </ul>
-    </nav>
-
-
-    <main>
+        <div>
         <h1>Registro de Usuario</h1>
         <form id="registerForm">
             <div class="form-group">
@@ -48,6 +52,7 @@
             </div>
             <button type="submit">Registrarse</button>
         </form>
+        </div>
     </main>
 
     <script src="app.js"></script>

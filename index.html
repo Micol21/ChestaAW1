@@ -5,59 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKIN ELIXIR</title>
     <!--<link rel="stylesheet" href="styles.css">donde se definirán las reglas de CSS para controlar la apariencia de los elementos en la página-->
-    <link rel="stylesheet" href="SCSS/styleScss.scss">
+    <link rel="stylesheet" href="SCSS/styleScss.css">
 </head>
 <body>
-    <div id="container">
-    <header>
-        
-        <div class="logo">
-            <img src="Formulario Basico/assets/img/logoviolet.png" alt="Logo de Skin Elixir">
-            
-        </div>
-        <!--<h1>Bienvenidos a Skin Elixir</h1>
-        <p>Descubre nuestros productos para el cuidado de la piel.</p>-->
-
+    
+        <header>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a  class="link" href="index.html">Inicio</a></li>
+                        <li><a class="link"href="logout.html" >Logout</a></li>
+                        <li><a class="link"href="login.html">Ingreso</a></li>
+                        <li><a class="link"href="buscarunproducto.html">Buscar un producto</a></li>
+                        <li><a class="link" href="afecciones.html">Afecciones de la piel</a></li>
+                        <li><a class="link"href="Preguntas Frecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a class="link"href="SobreNosotros.html">Sobre Nosotros</a></li>
+                    </ul>
+                </nav>
+                <button class="registro-btn" onclick="window.location.href='registro.html'">Registrarse</button>
     </header>
-<!-- Navbar -->
-    <nav>
-         <ul class="nav-links">
-            <li><a href="login.html">Ingreso</a></li>
-            <li><a href="registro.html">Registro</a></li>
-            <li><a href="buscarunproducto.html">Buscar un producto</a></li>
-            <li><a href="afecciones.html">Afecciones de la piel</a></li>
-           
-        </ul>
-    </nav>
 
 
+<div class="logo">
+    <img src="Formulario Basico/assets/img/logoviolet.png" alt="Logo de Skin Elixir">
 </div>
 
      <main>
+        <aside>
+            <h2>Buscador</h2>
+            <form >
+                <input type="text">
+                <input type="submit" value="Buscar">
+            </form>
+        </aside>
 
          <section class="categories">
             <div class="category-card">
-                <h2><a href="categorias/limpieza.html">Limpieza</a></h2>
+                <h2><a href="Formulario Basico/categorias/limpieza.html">Limpieza</a></h2>
             </div>
             <div class="category-card">
-                <h2><a href="categorias/serums.html">Serums</a></h2>
+                <h2><a href="Formulario Basico/categorias/serums.html">Serums</a></h2>
             </div>
             <div class="category-card">
-                <h2><a href="categorias/hidratacion.html">Hidratación</a></h2>
+                <h2><a href="Formulario Basico/categorias/hidratacion.html">Hidratación</a></h2>
             </div>
             <div class="category-card">
-                <h2><a href="categorias/proteccion-solar.html">Protección Solar</a></h2>
+                <h2><a href="Formulario Basico/categorias/proteccion-solar.html">Protección Solar</a></h2>
             </div>
         </section>
     </main>
 
-    <aside>
-        <h2>Buscador</h2>
-        <form >
-            <input type="text">
-            <input type="submit" value="Buscar">
-        </form>
-    </aside>
+   
 
     <footer>
 Chesta Micol Web &copy;2024

@@ -1,0 +1,37 @@
+
+
+    .nav-links {
+        display: flex;//permite que los enlaces se alineen en una sola fila.
+        list-style: none;//le quita los puntitos
+        gap: 20px; // Espacio entre los enlaces
+
+        li {
+            a {
+            color: $color-hover; // Cambia a un color legible
+            text-decoration: none;//le quita las lineas por debajo 
+            font-weight: bold;//pone en negrita
+            font-size: 16px;
+            padding: 10px 15px; // Espaciado interno para los enlaces
+            position: relative; // Necesario para el pseudo-elemento
+
+            // Estilo del pseudo-elemento ::after para la línea animada
+            &::after {
+                content: ""; // Pseudo-elemento vacío
+                position: absolute;
+                left: 0;
+                bottom: -22px;
+                height: 4px; // Grosor de la línea
+                width: 0; // Empieza en 0 de ancho
+                background-color: $color-blanco; // Color de la línea
+                transition: width 0.3s ease; // Transición suave
+            }
+
+            // Efecto de hover para hacer que la línea aparezca
+            &:hover::after {
+                width: 100%; // Expande la línea al 100% en hover
+            }
+            
+        }
+    }
+    
+}
