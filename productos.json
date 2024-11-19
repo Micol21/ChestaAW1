@@ -1,0 +1,143 @@
+{
+    "categorias": [
+      {
+        "id": 1,
+        "nombre": "Limpieza",
+        "productos": [
+          {
+            "id": 101,
+            "imageUrl": "Formulario Basico/assets/img/gellimpiezaloreal.webp",
+            "title": "LOREAL PARIS Gel de Limpieza",
+            "description": "El Gel de Limpieza Revitalift de Ácido Hialurónico y Ácido Salicílico...",
+            "price": 7945
+          },
+          {
+            "id": 102,
+            "imageUrl": "Formulario Basico/assets/img/jabon_neutrogena.webp",
+            "title": "Jabón Facial Neutrogena",
+            "description": "Jabón facial ideal para pieles sensibles. Limpia profundamente sin resecar.",
+            "price": 4200
+          },
+          {
+            "id": 103,
+            "imageUrl": "Formulario Basico/assets/img/limpiador-laroche.webp",
+            "title": "Gel Facial La Roche-Posay Effaclar Limpiador x400ml",
+            "description": "Effaclar Gel de La Roche-Posay es un gel de higiene para pieles mixtas a grasas. Piel grasa.",
+            "price": 47.687
+          },
+          {
+            "id": 104,
+            "imageUrl": "Formulario Basico/assets/img/facialgerave_limpiadorespumoso.webp",
+            "title": "Gel Facial Cerave Limpiador Espumoso x236ml",
+            "description": "El gel limpiador espumoso elimina el exceso de sebo restaurando la barrera protectora de la piel.",
+            "price": 24.562
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "nombre": "Serums",
+        "productos": [
+          {
+            "id": 201,
+            "imageUrl": "Formulario Basico/assets/img/serum_revitalift.webp",
+            "title": "Serum revitalift ácido hialurónico 30 ml",
+            "description": "El Serum de Revitalift Acido hialuronico es un producto complementario a la rutina diaria. Tiene una concentracion de 1,5% de Acido Hialuronico Puro.",
+            "price": 32.200
+          },
+          {
+            "id": 202,
+            "imageUrl": "Formulario Basico/assets/img/b5serum_laroche.webp",
+            "title": "Hyalu b5 serum antiedad con ácido hialurónico 30 ml",
+            "description": "HYALU B5 Serum: La primera solución dermatocosmética de La Roche-Posay que repara1 y rellena de INMEDIATO y reduce significativamente las arrugas.",
+            "price": 93.210
+          },
+          {
+            "id": 203,
+            "imageUrl": "Formulario Basico/assets/img/serum_renovateurs.webp",
+            "title": "Serum renovateurs lactobionico 8 30 ml",
+            "description": "El Sérum Lactobiónico 8% de Cépage es un potente renovador facial formulado con ácido lactobiónico al 8%, que actúa eficazmente como exfoliante y humectante ",
+            "price": 31.600
+          },
+          {
+            "id": 204,
+            "imageUrl": "Formulario Basico/assets/img/serum_Liftactiv.webp",
+            "title": "Liftactiv specialist b3 serum anti manchas 30 ml",
+            "description": "Liftactiv Specialist B3 Serum Anti Manchas tiene una eficacia global antiedad sobre las manchas, las arrugas y el tono de piel. ",
+            "price": 102.385
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "nombre": "Hidratación",
+        "productos": [
+          {
+            "id": 301,
+            "imageUrl": "Formulario Basico/assets/img/aguatermal_laroche.webp",
+            "title": "Agua termal 150 ml",
+            "description": "Agua Termal para pieles sensibles y/o irritadas por factores externos (sol, tratamientos dermatológicos, etc). Adecuada para las pieles de los adultos y los bebés. ",
+            "price": 30.585
+          },
+          {
+            "id": 302,
+            "imageUrl": "Formulario Basico/assets/img/sprayfacial_eucerin.webp",
+            "title": "Spray facial hidratante hyaluron-filler + 3x effect piel sensible",
+            "description": "El Spray facial Eucerin HYALURON-FILLER + 3x Effect permite una hidratación instantánea y duradera gracias al Ácido Hialurónico, protegiendo la piel ante irritantes externos y previniendo su envejecimiento.",
+            "price": 27.158
+          },
+          {
+            "id": 303,
+            "imageUrl": "Formulario Basico/assets/img/cremahumectanteclasica_caviahue.webp",
+            "title": "Crema facial humectante con agua termal 70 gr",
+            "description": "Crema facial humectante con agua termal del volcán copahue.  Beneficios:  - Hidratante intensivo - Revitaliza e ilumina - Testeado Dermatológicamente   ",
+            "price": 15.000
+          },
+          {
+            "id": 304,
+            "imageUrl": "Formulario Basico/assets/img/cremafacial_Adermicina.webp",
+            "title": "Adermicina Crema facial humectante 90 grs",
+            "description": "Hydraingredientes, Niacinamida, Vitamina E  Adermicina Cuidado Facial Humectante es una crema con Hydraingredientes que humectan y mantienen la piel hidratada ",
+            "price": 4.990
+          }
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Protección Solar",
+        "productos": [
+          {
+            "id": 401,
+            "imageUrl": "Formulario Basico/assets/img/protectorsolar_eucerin.webp",
+            "title": "Eucerin,Protector solar oil control toque seco fps 50",
+            "description": "El Protector solar Eucerin Oil Control Sun Face Toque Seco con Advanced Spetral Technology está diseñado para las necesidades específicas de la piel grasa y propensa al acné. ",
+            "price": 51.227
+          },
+          {
+            "id": 402,
+            "imageUrl": "Formulario Basico/assets/img/protectorsolar_larocheposay.webp",
+            "title": "La roche posay,Anthelios uvmune 400 proctector solar Rostro 50+ fluido invisible 50ml",
+            "description": "Anthelios UV MUNE 400 Fluido Invisible FPS 50+ / PF UVA 46 es un protector solar que ofrece la más alta protección de rayos UVB, UVA e incluso UVA ultra-largos que son los más dañinos del espectro solar.",
+            "price": 35.490
+          },
+          {
+            "id": 403,
+            "imageUrl": "Formulario Basico/assets/img/protectorsolar_ISDIN.webp",
+            "title": "ISDIN, Fotoprotector fusion water magic 5 stars fps50+ 50 ml",
+            "description": "Tecnología Fusion con la delicadeza del agua.   ",
+            "price": 52.980
+          },
+          {
+            "id": 404,
+            "imageUrl": "Formulario Basico/assets/img/protectorsolarAnthelios_larocheposay.webp",
+            "title": "La roche posay,Anthelios Oil Correct SPF50+ 50ml",
+            "description": "Crema diaria fotocorrectora con FPS 50+, que protege y corrige en 1 sólo producto. Brinda protección contra los daños de la piel inducidos por el sol, contaminación y oxidación gracias a su exclusiva tecnología CELLOX-B3",
+            "price": 42.266
+          }
+        ]
+    }
+
+    ]
+  }
+  
+  
