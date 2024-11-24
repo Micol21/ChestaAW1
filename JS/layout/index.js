@@ -1,4 +1,4 @@
-import { navBarComponent } from "./navbar.js";
+import { navBarComponent } from "../components/navbar.js";
 
 
 

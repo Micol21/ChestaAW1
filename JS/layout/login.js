@@ -6,7 +6,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    fetch('../DATA/users.json').then(res => res.json()).then(users =>{
+    fetch('../../DATA/users.json').then(res => res.json()).then(users =>{
         const user = users.find(e => e.email === email && e.pass === password)//convierte el objeto user a una cadena para almacenarlo en sessionStorage
 
         // Validar los datos ingresados (simulación de autenticación)

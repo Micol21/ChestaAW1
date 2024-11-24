@@ -1,9 +1,9 @@
-import { cardComponent } from "./cards.js";
+import { cardComponent } from "../components/cards.js";
 
 let cardContainer = document.getElementById('cardContainerSerums');
 
 // Traemos los datos desde el archivo JSON
-fetch('../DATA/productos.json') 
+fetch('../../DATA/productos.json') 
   .then(response => response.json()) // Convertimos la respuesta a JSON
   .then(data => {
     // Buscamos los productos de la categoría "Serums"
@@ -29,39 +29,29 @@ function mostrarProductos(productos) {
       cardContainer.innerHTML += cardHTML;
     });
   
-    // Configurar eventos después de agregar las tarjetas
-    configurarEventosDeBotones();
-  
     // Añadir los eventos de los botones de cantidad
     const addButtons = document.querySelectorAll('.btn-add');
     const quitButtons = document.querySelectorAll('.btn-quit');
     
-    // Iterar sobre cada tarjeta de producto para asignar eventos individuales
-    addButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        // Obtener el contenedor de la tarjeta actual
-        const productCard = btn.closest('.product-card');
-        const quantityDisplay = productCard.querySelector('.quantity');
-  
-        // Obtener la cantidad actual, incrementarla y actualizar la visualización
-        let currentQuantity = parseInt(quantityDisplay.textContent);
-        currentQuantity++;
-        quantityDisplay.textContent = currentQuantity;
-      });
+    // Añadir eventos a los botones de "sumar"
+  addButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+      const productId = event.target.getAttribute('data-id');
+      const quantityElement = document.querySelector(`.quantity[data-id="${productId}"]`);
+      let quantity = parseInt(quantityElement.textContent, 10);
+      quantityElement.textContent = quantity + 1;
     });
-  
-    quitButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        // Obtener el contenedor de la tarjeta actual
-        const productCard = btn.closest('.product-card');
-        const quantityDisplay = productCard.querySelector('.quantity');
-  
-        // Obtener la cantidad actual, decrementar si es mayor a 0 y actualizar la visualización
-        let currentQuantity = parseInt(quantityDisplay.textContent);
-        if (currentQuantity > 0) {
-          currentQuantity--;
-          quantityDisplay.textContent = currentQuantity;
-        }
-      });
+  });
+
+  // Añadir eventos a los botones de "restar"
+  quitButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+      const productId = event.target.getAttribute('data-id');
+      const quantityElement = document.querySelector(`.quantity[data-id="${productId}"]`);
+      let quantity = parseInt(quantityElement.textContent, 10);
+      if (quantity > 0) {
+        quantityElement.textContent = quantity - 1;
+      }
     });
+  });
   }

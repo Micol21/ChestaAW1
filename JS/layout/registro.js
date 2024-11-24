@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Simular cargar datos iniciales desde users.json a localStorage (esto sería en una primera carga)
     if (!localStorage.getItem('usersData')) {
-        fetch('../DATA/users.json')
+        fetch('../../DATA/users.json')
             .then(response => response.json())
             .then(data => {
                 localStorage.setItem('usersData', JSON.stringify(data));
