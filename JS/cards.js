@@ -1,4 +1,4 @@
-export const cardComponent = (imageUrl, title, description, price) => {
+export const cardComponent = (id,imageUrl, title, description, price) => {
   
     return `
     <div class="product-card">
@@ -12,12 +12,15 @@ export const cardComponent = (imageUrl, title, description, price) => {
         </div>
         <div class="card-footer">
             <p class="price">$${price}</p>
-            <button class="btn btn-quit">-</button>
-            <p class="quantity">0</p>
-            <button class="btn btn-add"}>+</button>
-             <button class="btn btn-cart">Añadir al carrito</button>
+            <button class="btn btn-quit" data-id="${id}">-</button>
+            <p class="quantity"data-id="${id}">0</p>
+            <button class="btn btn-add" data-id="${id}">+</button>
+             <button class="btn btn-cart" data-id="${id}">Añadir al carrito</button>
         </div>
     </div>
     `
 }
+
+
+
 

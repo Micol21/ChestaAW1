@@ -49,6 +49,12 @@ header{
     height: 85px;
     padding: 10px 5%;
     
+    .titulo-login {
+        font-size: 1.5rem; // Aumenta el tamaño de la fuente
+        font-weight: bold; // Negrita para destacar
+        color: white; // Texto en blanco para mejor contraste
+        margin: 0; // Remueve cualquier margen
+    }
 
 }
 

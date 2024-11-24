@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Juan",
+        "lastName": "Pérez",
+        "pass": "juan123",
+        "email": "juan@example.com",
+        "foto": "https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+    },
+    {
+        "name": "María",
+        "lastName": "Gómez",
+        "pass": "maria123",
+        "email": "maria@example.com",
+        "foto": "https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+    },
+    {
+        "name": "Carlos",
+        "lastName": "López",
+        "pass": "carlos123",
+        "email": "carlos@example.com",
+        "foto": "https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+    },
+    {
+        "name": "Ana",
+        "lastName": "Martínez",
+        "pass": "ana123",
+        "email": "ana@example.com",
+        "foto": "https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+    },
+    {
+        "name": "Luis",
+        "lastName": "Rodríguez",
+        "pass": "luis123",
+        "email": "luis@example.com",
+        "foto": "https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+    },
+    {
+        "name": "Elena",
+        "lastName": "Fernández",
+        "pass": "elena123",
+        "email": "elena@example.com",
+        "foto": "https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+    },
+    {
+        "name": "Miguel",
+        "lastName": "Sánchez",
+        "pass": "miguel123",
+        "email": "miguel@example.com",
+        "foto": "https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+    },
+    {
+        "name": "Laura",
+        "lastName": "Ruiz",
+        "pass": "laura123",
+        "email": "laura@example.com",
+        "foto": "https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+    },
+    {
+        "name": "Pedro",
+        "lastName": "Hernández",
+        "pass": "pedro123",
+        "email": "pedro@example.com",
+        "foto": "https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+    },
+    {
+        "name": "Sara",
+        "lastName": "Díaz",
+        "pass": "sara123",
+        "email": "sara@example.com",
+        "foto": "https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+    }
+]
