@@ -2,11 +2,11 @@
 
 // Array de objetos con las direcciones y títulos de las páginas
 export const navElements = [
-    { title: 'Inicio', link: 'index.html' },
-    { title: 'Buscar un producto', link: 'buscarunproducto.html' },
-    { title: 'Afecciones de la piel', link: 'afecciones.html' },
-    { title: 'Preguntas Frecuentes', link: 'Preguntas Frecuentes.html' },
-    { title: 'Sobre Nosotros', link: 'SobreNosotros.html' },
+    { title: 'Inicio', link: '/index.html' },
+    { title: 'Buscar un producto', link: '/pages/navbar/buscarunproducto.html' },
+    { title: 'Afecciones de la piel', link: '/pages/navbar/afecciones.html' },
+    { title: 'Preguntas Frecuentes', link: '/pages/navbar/PreguntasFrecuentes.html' },
+    { title: 'Sobre Nosotros', link: '/pages/navbar/SobreNosotros.html' },
 ]
 
 export const navBarComponent = `

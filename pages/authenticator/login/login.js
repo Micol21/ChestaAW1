@@ -6,7 +6,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    fetch('../../DATA/users.json').then(res => res.json()).then(users =>{
+    fetch('../../../api/users.json').then(res => res.json()).then(users =>{
         const user = users.find(e => e.email === email && e.pass === password)//convierte el objeto user a una cadena para almacenarlo en sessionStorage
 
         // Validar los datos ingresados (simulación de autenticación)
@@ -16,7 +16,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         sessionStorage.setItem('userData', JSON.stringify(user))//TODA LA INFO SE GUARDA EN STRING
         //guarda la información del usuario logueado bajo la clave 'userData'.
         
-        window.location.href = "index.html";// Autenticación exitosa: redireccionar a la página principal
+        window.location.href = "../../../index.html";// Autenticación exitosa: redireccionar a la página principal
     } else {
         // Mostrar un mensaje de error si las credenciales no son correctas
         alert("Correo o contraseña incorrectos. Por favor, inténtalo de nuevo.");
