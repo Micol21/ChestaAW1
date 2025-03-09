@@ -27,6 +27,34 @@
   width: 100%;
 }
 
+/* Estilo para el botón del carrito */
+.cart-btn {
+  margin-left: auto; /* Empuja el carrito hacia la derecha */
+  background-color: #fbeaff;
+  border: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cart-btn:hover {
+  background-color: white;
+}
+.cart-btn::before {
+  content: "🛒";
+  margin-right: 5px;
+}
+
+/* Asegurarse de que el navbar sea responsive */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacia los elementos a los extremos */
+  padding: 0 20px;
+}
+
 .registro-btn:hover {
   transform: scale(1.2);
 }
@@ -129,6 +157,32 @@
   display: flex;
   margin-top: 2rem;
   justify-content: space-around;
+}
+
+/* Estilo base del carrito */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Oculto inicialmente fuera de la pantalla */
+  width: 300px;
+  height: 100%;
+  background-color: #f8f9fa;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+}
+
+/* Cuando está abierto */
+.cart-sidebar.open {
+  right: 0; /* Aparece desde el lado derecho */
+}
+
+/* Estilo del botón cerrar */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .login-page {

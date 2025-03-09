@@ -1,0 +1,47 @@
+/* Estilos para el carrito */
+/* Estilo del modal */
+
+.modal {
+    display: none;/* Asegura que esté oculto inicialmente */
+    position: fixed;
+    z-index: 9999; /* Asegurar que está encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón de cerrar */
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mostrar el modal cuando está activo */
+.show {
+    display: flex !important;  /* Asegurar que el modal se vea */
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+

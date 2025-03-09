@@ -3,7 +3,7 @@
 // Array de objetos con las direcciones y títulos de las páginas
 export const navElements = [
     { title: 'Inicio', link: '/index.html' },
-    { title: 'Buscar un producto', link: '/pages/navbar/buscarunproducto.html' },
+    { title: 'Buscar un producto', link: '/pages/navbar/buscarunproducto.html' }, 
     { title: 'Afecciones de la piel', link: '/pages/navbar/afecciones.html' },
     { title: 'Preguntas Frecuentes', link: '/pages/navbar/PreguntasFrecuentes.html' },
     { title: 'Sobre Nosotros', link: '/pages/navbar/SobreNosotros.html' },
@@ -26,7 +26,8 @@ export const navBarComponent = `
                     </ul>
                 </nav>
                 
-                <button class="logout-btn" id="btnLogout"> Logout</button>
+                <button id="openCart" class="cart-btn"> Ver Carrito</button>
+                
                 `
 
                 /*antes de importar hay que exportar*/

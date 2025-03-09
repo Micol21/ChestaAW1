@@ -1,8 +1,11 @@
-// Escuchar el evento de envío del formulario
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita  que el formulario se envíe de manera tradicional (recargando la página).
 
-    // Obtener los valores de email y password
+    document.addEventListener('DOMContentLoaded', function() {
+        var element = document.getElementById("loginForm"); // Asegúrate de que el ID coincida con el elemento que buscas
+        if (element) {
+          element.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita  que el formulario se envíe de manera tradicional (recargando la página).
+            
+            // Obtener los valores de email y password
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
@@ -23,8 +26,11 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     }
     })
 
-    
-});
+          });
+        }
+      });
+      
+
 
 
 const getUserData = (key)=> {

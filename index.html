@@ -7,6 +7,27 @@
     <!--<link rel="stylesheet" href="styles.css">donde se definirán las reglas de CSS para controlar la apariencia de los elementos en la página-->
     <link rel="stylesheet" href="SCSS/styleScss.css">
 </head>
+
+<!-- Modal del Carrito -->
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+        <span id="closeCartModal" class="close">&times;</span>
+        <h2>Carrito de Compras</h2>
+        <table id="lista-carrito">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button id="vaciar-carrito" class="btn-2">Vaciar Carrito</button>
+    </div>
+</div>
+
 <body>
     
         <header>
@@ -30,17 +51,18 @@
 
          <section class="categories" >
             <div class="category-card">
-                <h2><a href="pages/categorias/limpieza.html">Limpieza</a></h2>
+                <h2><a href="pages/categorias/categorias.html?categoria=Limpieza">Limpieza</a></h2>
             </div>
             <div class="category-card">
-                <h2><a href="pages/categorias/serums.html">Serums</a></h2>
+                <h2><a href="pages/categorias/categorias.html?categoria=Serums">Serums</a></h2>
             </div>
             <div class="category-card">
-                <h2><a href="pages/categorias/hidratacion.html">Hidratación</a></h2>
+                <h2><a href="pages/categorias/categorias.html?categoria=Hidratación">Hidratación</a></h2>
             </div>
             <div class="category-card">
-                <h2><a href="pages/categorias/proteccion-solar.html">Protección Solar</a></h2>
+                <h2><a href="pages/categorias/categorias.html?categoria=Protección Solar">Protección Solar</a></h2>
             </div>
+            
         </section>
     </main>
 
@@ -54,8 +76,17 @@ Chesta Micol Web &copy;2024
     <script type="module" src="pages/index.controller.js"></script>
     
     <script type = "module"src="pages/authenticator/login/login.js"></script>
+
+    <script type="module" src="components/navbar.componenet.js"></script>
     
-    <script type="module" src="pages/carrito/"></script>
+
+    <script type="module" src="pages/carrito/carrito.controller.js"></script>
+
+    
+    
+
+    
+    
     
 
 

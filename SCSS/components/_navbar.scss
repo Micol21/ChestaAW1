@@ -35,3 +35,35 @@
     }
     
 }
+
+/* Estilo para el botón del carrito */
+.cart-btn {
+    margin-left: auto; /* Empuja el carrito hacia la derecha */
+    background-color: $color-hover;
+    border: none;
+    color: $color-blanco;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: lighten($color-hover, 10%);
+    }
+
+    &::before {
+        content: "🛒";
+        margin-right: 5px;
+    }
+}
+
+/* Asegurarse de que el navbar sea responsive */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacia los elementos a los extremos */
+    padding: 0 20px;
+}
+
+
