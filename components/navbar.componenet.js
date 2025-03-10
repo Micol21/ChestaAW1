@@ -27,6 +27,9 @@ export const navBarComponent = `
                 </nav>
                 
                 <button id="openCart" class="cart-btn"> Ver Carrito</button>
+
+
+                
                 
                 `
 

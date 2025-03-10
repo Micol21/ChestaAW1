@@ -16,6 +16,8 @@ export const cardComponent = (id,imageUrl, title, description, price) => {
             <p class="quantity"data-id="${id}">0</p>
             <button class="btn btn-add" data-id="${id}">+</button>
              <button class="btn btn-cart" data-id="${id}">Añadir al carrito</button>
+             <!-- Botón para ver más detalles -->
+             <a href="../../pages/producto-detalle/producto-detalle.html?id=${id}" class="btn btn-detail">Ver más detalles</a>
         </div>
     </div>
     `

@@ -32,7 +32,7 @@
 }
 
 /* Mostrar el modal cuando está activo */
-.show {
+.modal.show {
     display: flex !important;  /* Asegurar que el modal se vea */
     align-items: center;
     justify-content: center;
