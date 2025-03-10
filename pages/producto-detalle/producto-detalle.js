@@ -15,11 +15,26 @@ traerDatosFetch(null, (productos) => {
     if (producto) {
         // Si el producto existe, generar el HTML para mostrar los detalles
         productoDetalle.innerHTML = `
-            <h1>${producto.title}</h1>
-            <img src="${producto.imageUrl}" alt="${producto.title}" class="product-image">
-            <p>${producto.description}</p>
-            <p class="price">Precio: $${producto.price}</p>
-            <button class="btn btn-add" data-id="${producto.id}">Añadir al carrito</button>
+            <div class="product-container">
+        <div class="product-image-container">
+        <img src="${producto.imageUrl}" alt="${producto.title}" class="product-image">
+        </div>
+        <div class="product-details">
+        <p class="company-name">Sneaker Company</p>
+        <h1 class="product-title">${producto.title}</h1>
+        <p class="product-description">${producto.description}</p>
+        <div class="product-pricing">
+            <span class="current-price">$${producto.price}</span>
+            </div>
+            <div class="product-quantity">
+            <button class="quantity-decrease">-</button>
+            <span class="quantity-value">0</span>
+            <button class="quantity-increase">+</button>
+            </div>
+        <button class="add-to-cart-btn" data-id="${producto.id}">Añadir al carrito</button>
+    </div>
+</div>
+
         `;
     } else {
         // Si el producto no existe, mostrar un mensaje de error
